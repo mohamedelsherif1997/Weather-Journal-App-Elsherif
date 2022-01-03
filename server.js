@@ -1,6 +1,5 @@
 //global constants 
-const hostName = "127.0.0.1";
-const port = 5500;
+const port = 4000;
 
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
@@ -33,19 +32,19 @@ function getData (req,res){
     res.send(projectData);
 };
 // Te route
-app.get(`/all`, getData);
+app.get('/all', getData);
 
 // function to post data 
 function postData (req,res){
     projectData = req.body;
     res.send (projectData);
 }
-app.post('/add', postData);
+app.post('/addData', postData);
 
 //Testion the server
 
 function testServer (){
-    console.log(`The server is working at https://${hostName} and Port : ${port}`);
+    console.log(`The server is working at Port : ${port}`);
 }
 
 app.listen(port,testServer());

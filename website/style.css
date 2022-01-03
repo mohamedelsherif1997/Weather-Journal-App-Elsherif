@@ -17,11 +17,15 @@ body{
 }
 
 .holder{
-
+display: block;
 }
 
 .entry{
     background: rgba(59, 74, 107, .4);
+}
+.title {
+    display: block;
+    opacity: 0.75;
 }
 
 #entryHolder{
