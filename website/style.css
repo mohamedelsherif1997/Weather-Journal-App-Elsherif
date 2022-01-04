@@ -19,13 +19,27 @@ body{
 .holder{
 display: block;
 }
+.headline{
+    display: block;
+}
+.zip {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.feel {
+    display: block;
+}
+#generate {
+    display: block;
+}
 
 .entry{
     background: rgba(59, 74, 107, .4);
+    display: block;
 }
 .title {
-    display: block;
-    opacity: 0.75;
+    font-size: 20px;
 }
 
 #entryHolder{
