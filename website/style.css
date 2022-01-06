@@ -27,9 +27,6 @@ display: block;
     position: relative;
     width: 100%;
 }
-.feel {
-    display: block;
-}
 #generate {
     display: block;
 }
@@ -42,28 +39,7 @@ display: block;
     font-size: 20px;
 }
 
-#entryHolder{
 
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
-}
-
-.headline {
-
-}
-.title{
-
-}
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
 label{
@@ -74,7 +50,7 @@ label{
 input{
     display:block;
     height: 60px;
-    width: 320px;
+    width: 350px;
     background:#22b2da;
     color: #f0d43a;
     font-size: 20px;
@@ -83,13 +59,14 @@ input{
 }
 
 button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
+    width: 350px;
+    height: 50px;
+    background: #1050da;
+    color: #928123;
+    font-size: 30px;
     font-family: 'Oswald', sans-serif;
-    border: none;
+    border: 0ch;
+    border-radius: 15%;
     box-shadow: 2px 4px 5px #444;
 }
 h1{
@@ -101,6 +78,7 @@ textarea{
     color: #f0d43a;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    width: 350px;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,

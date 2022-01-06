@@ -1,7 +1,7 @@
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (1 + d.getMonth())+'-'+ d.getDate()+'-'+ d.getFullYear();
 
 // The API key 
 let api = "f1ea40ec32a22469761a7d0a94a3ca9c";
@@ -22,7 +22,7 @@ async function generateLink (){
             getData(link).then(function(data){
                 postData('/addData',
                     {
-                        date: d,
+                        date: newDate,
                         temp: data.main.temp,
                         feelings: feelingValue
                     })
