@@ -18,6 +18,7 @@ body{
 
 .holder{
 display: block;
+position: relative;
 }
 .headline{
     display: block;
@@ -79,6 +80,7 @@ textarea{
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     width: 350px;
+    height: 60px;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,

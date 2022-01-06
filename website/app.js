@@ -24,6 +24,8 @@ async function generateLink (){
                     {
                         date: newDate,
                         temp: data.main.temp,
+                        country : data.sys.country,
+                        city : data.name,
                         feelings: feelingValue
                     })
             
@@ -82,10 +84,14 @@ async function requiredData (){
         const date = document.getElementById('date');
         const temprature = document.getElementById('temp');
         const content = document.getElementById('content');
+        const country = document.getElementById('country');
+        const city = document.getElementById('city');
 
-        date.innerHTML = projectData.date;
-        temprature.innerHTML = projectData.temp;
-        content.innerHTML = projectData.feelings;
+        date.innerHTML = `Date : ${projectData.date}`;
+        temprature.innerHTML = `The temprature : ${projectData.temp}`;
+        content.innerHTML = `Your felling : ${projectData.feelings}`;
+        country.innerHTML = `The country : ${projectData.country}`;
+        city.innerHTML = `The city : ${projectData.city}`;
         }
     catch(error){
         console.log(`Error: ${error}`);
