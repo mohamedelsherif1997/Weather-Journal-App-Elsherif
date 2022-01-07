@@ -4,7 +4,7 @@ let d = new Date();
 let newDate = (1 + d.getMonth())+'-'+ d.getDate()+'-'+ d.getFullYear();
 
 // The API key 
-let api = "f1ea40ec32a22469761a7d0a94a3ca9c";
+const api = "f1ea40ec32a22469761a7d0a94a3ca9c";
 
 // Function to generate the URL .
 async function generateLink (){
@@ -17,7 +17,7 @@ async function generateLink (){
     //try and catch to find errors
     try{
         if(zipValue){
-            const link = `https://api.openweathermap.org/data/2.5/weather?zip=${zipValue}&appid=${api}`;
+            const link = `https://api.openweathermap.org/data/2.5/weather?zip=${zipValue}&appid=${api}&units=metric`;
 
             getData(link).then(function(data){
                 postData('/addData',
@@ -88,7 +88,7 @@ async function requiredData (){
         const city = document.getElementById('city');
 
         date.innerHTML = `Date : ${projectData.date}`;
-        temprature.innerHTML = `The temprature : ${projectData.temp}`;
+        temprature.innerHTML = `The temprature : "${projectData.temp}" Celcius degree`;
         content.innerHTML = `Your felling : ${projectData.feelings}`;
         country.innerHTML = `The country : ${projectData.country}`;
         city.innerHTML = `The city : ${projectData.city}`;
